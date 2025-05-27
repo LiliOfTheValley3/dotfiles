@@ -1,0 +1,12 @@
+#!/bin/bash
+
+TOTP=$(kdialog --inputbox "Pwease enter the 2FA UwU" --title "PWUSH :3")
+
+if [[ $? = 1 ]]; then
+exit 1
+fi
+
+rclone sync $HOME/Dokumente/stuff2\ 2.kdbx protondrive:stuff --protondrive-2fa=$TOTP && notify-send -a 'PWULL1' $? &
+
+rclone sync $HOME/Dokumente/stuff2.kdbx protondrive:stuff --protondrive-2fa=$TOTP && notify-send -a 'PWULL2' $?
+
