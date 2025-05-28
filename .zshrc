@@ -103,4 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias ls="eza --icons"
+alias list="ls --icons --group-directories-first --hyperlink -l"
+alias listall="ls --icons --group-directories-first --hyperlink -la"
+#
 #
