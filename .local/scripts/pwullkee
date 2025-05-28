@@ -6,4 +6,4 @@ if [[ $? = 1 ]]; then
 exit 1
 fi
 
-rclone sync protondrive:stuff/stuff2.kdbx $HOME/.local/stuff --protondrive-2fa=$TOTP && notify-send -a 'PWULL' $?
+rclone sync protondrive:stuff/stuff.kdbx $HOME/.local/stuff --protondrive-2fa=$TOTP && notify-send -a 'PWULL' $?
