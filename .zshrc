@@ -107,6 +107,6 @@ source $ZSH/oh-my-zsh.sh
 alias ls="eza --icons=always"
 alias list="ls --icons=always --group-directories-first --hyperlink -l"
 alias listall="ls --icons=always --group-directories-first --hyperlink -la"
-alias die="poweroff"
+alias off="poweroff"
 #
 #
