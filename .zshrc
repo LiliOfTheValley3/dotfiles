@@ -107,5 +107,6 @@ source $ZSH/oh-my-zsh.sh
 alias ls="eza --icons"
 alias list="ls --icons --group-directories-first --hyperlink -l"
 alias listall="ls --icons --group-directories-first --hyperlink -la"
+alias die="poweroff"
 #
 #
