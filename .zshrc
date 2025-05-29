@@ -71,7 +71,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting extract kitty universalarchive)
+plugins=(git zsh-syntax-highlighting extract kitty universalarchive zsh-fzf-history-search zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,9 +104,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls="eza --icons"
-alias list="ls --icons --group-directories-first --hyperlink -l"
-alias listall="ls --icons --group-directories-first --hyperlink -la"
+alias ls="eza --icons=always"
+alias list="ls --icons=always --group-directories-first --hyperlink -l"
+alias listall="ls --icons=always --group-directories-first --hyperlink -la"
 alias die="poweroff"
 #
 #
