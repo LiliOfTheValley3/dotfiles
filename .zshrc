@@ -105,8 +105,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ls="eza --icons=always"
-alias list="ls --icons=always --group-directories-first --hyperlink -l"
-alias listall="ls --icons=always --group-directories-first --hyperlink -la"
+alias l="ls --icons=always --group-directories-first --hyperlink -l"
+alias la="ls --icons=always --group-directories-first --hyperlink -la"
 alias off="poweroff"
+alias vim="nvim"
+
+eval "$(zoxide init --cmd cd zsh)"
+
+hyfetch
 #
 #
