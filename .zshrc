@@ -108,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 alias ls="eza --icons=always"
 alias l="ls --icons=always --group-directories-first --hyperlink -l"
 alias la="ls --icons=always --group-directories-first --hyperlink -la"
-alias off="poweroff"
+alias die="poweroff"
 alias vim="nvim"
 
 eval "$(zoxide init --cmd cd zsh)"

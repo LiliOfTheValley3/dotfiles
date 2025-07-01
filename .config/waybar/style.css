@@ -1,0 +1,166 @@
+@import "macchiato.css";
+
+* {
+  font-family: FantasqueSansMono Nerd Font;
+  font-size: 17px;
+  min-height: 0;
+}
+
+#waybar {
+  background: transparent;
+  color: @text;
+  /* margin: 5px 5px; */
+}
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 5px 0 5px 0;
+  background-color: @surface0;
+  margin-left: .5rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: @sky;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  border-radius: 1rem;
+  background-color: @surface1;
+}
+
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock,
+#power-profiles-daemon,
+#memory,
+#cpu,
+#network,
+#idle_inhibitor,
+#mpd,
+#window,
+#taskbar,
+
+#custom-power {
+  background-color: @surface0;
+  padding: 0.5rem 1rem .5rem 1rem;
+  margin: .4rem 0;
+}
+
+#custom-power {
+    margin-right: .5rem;
+    border-radius: 0px 1rem 1rem 0px;
+    color: @red;
+    padding: 0 .6rem;
+}
+
+#power-profiles-daemon {
+  border-radius: 1rem 0px 0px 1rem;
+  padding: 0 .6rem 0 1rem;
+}
+
+#power-profiles-daemon.balanced {
+  border-radius: 1rem 0px 0px 1rem;
+  color: @sapphire
+}
+
+#power-profiles-daemon.power-saver {
+  border-radius: 1rem 0px 0px 1rem;
+  color: @green
+}
+
+#tray {
+  margin-right: .5rem;
+  border-radius: 1rem;
+}
+
+#clock {
+  color: @blue;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: .5rem;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#memory {
+ color: @mauve
+}
+
+#cpu {
+  color: @lavender
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#backlight, #battery {
+    border-radius: 0;
+}
+
+#network {
+  color: @peach
+}
+
+#pulseaudio {
+  color: @maroon;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: .5rem;
+}
+
+#custom-music {
+  color: @mauve;
+  border-radius: 1rem;
+}
+
+#custom-lock {
+    border-radius: 1rem 0px 0px 1rem;
+    color: @lavender;
+}
+
+#window {
+  border-radius: 1rem;
+  color: @text;
+  /* margin-right: .5rem; */
+}
+
+#taskbar {
+  border-radius: 1rem;
+  padding: 0;
+  margin-left: .5rem;
+}
+
+#taskbar button.active {
+  background-color: @overlay0;
+  border-radius: 1rem;
+}
+
+#taskbar button {
+  border-radius: 1rem;
+  padding: .4rem .6rem .4rem .6rem;
+}

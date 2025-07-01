@@ -4,24 +4,28 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    //"spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
+	"wlr/taskbar"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
+     // "idle_inhibitor",
         "pulseaudio",
         "network",
 	"backlight",
         "battery",
-        "battery#bat2",
+	"cpu",
+	"memory",
+     // "battery#bat2",
         "clock",
         "tray",
+	"power-profiles-daemon",
         "custom/power"
     ],
    //  Modules configuration
@@ -102,11 +106,13 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
+    	"interval": 10,
         "format": "{usage}% ",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+    	"interval": 30,
+        "format": "{percentage}% "
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -134,7 +140,8 @@
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+	"interval": 10
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -201,5 +208,14 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
-    }
+    },
+    "wlr/taskbar": {
+        	"format": "{icon}",
+        	"tooltip": true,
+        	"tooltip-format": "{title}",
+        	"on-click": "activate",
+        	"on-click-middle": "close",
+        	"active-first": false,
+		},
+
 }
