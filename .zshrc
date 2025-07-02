@@ -109,6 +109,7 @@ alias ls="eza --icons=always"
 alias l="ls --icons=always --group-directories-first --hyperlink -l"
 alias la="ls --icons=always --group-directories-first --hyperlink -la"
 alias die="poweroff"
+alias off="poweroff"
 alias vim="nvim"
 
 eval "$(zoxide init --cmd cd zsh)"
