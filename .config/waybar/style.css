@@ -70,6 +70,11 @@
   padding: 0 .6rem 0 1rem;
 }
 
+#power-profiles-daemon.performance {
+  border-radius: 1rem 0px 0px 1rem;
+  color: @yellow
+}
+
 #power-profiles-daemon.balanced {
   border-radius: 1rem 0px 0px 1rem;
   color: @sapphire

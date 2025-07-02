@@ -1,0 +1,11 @@
+[Unit]
+Description=Start Wallpaperengine
+
+[Service]
+Environment="XDG_SESSION_TYPE=wayland"
+ExecStart=/bin/zsh -c "linux-wallpaperengine -r eDP-1 -r DP-1 -r DP-2 -f 30 2439157789"
+ExecReload=/bin/zsh -c "linux-wallpaperengine -r eDP-1 -r DP-1 -r DP-2 -f 30 2439157789"
+Type=oneshot
+
+[Install]
+WantedBy=default.target
