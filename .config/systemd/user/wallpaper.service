@@ -1,13 +1,13 @@
 [Unit]
 Description=Start Wallpaperengine
-WantedBy=wayland-session@hyprland.desktop.target
+After=wayland-session@hyprland.desktop.target
+Requires=wayland-session@hyprland.desktop.target
 
 [Service]
 Environment="XDG_SESSION_TYPE=wayland"
 ExecStart=/bin/zsh -c "linux-wallpaperengine -r eDP-1 -r DP-1 -r DP-2 -f 30 2439157789"
 ExecReload=/bin/zsh -c "linux-wallpaperengine -r eDP-1 -r DP-1 -r DP-2 -f 30 2439157789"
 Type=exec
-Slice=background-graphical.slice
 
 [Install]
 WantedBy=wayland-session@hyprland.desktop.target
