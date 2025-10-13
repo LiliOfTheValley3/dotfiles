@@ -1,9 +1,11 @@
 [Unit]
 Description=Start Batterycheck
-WantedBy=graphical-session.target
+After=graphical-session.target
+Requires=graphical-session.target
+
 
 [Service]
-ExecStart=${HOME}/.local/scripts/batterycheck
+ExecStart=%h/.local/scripts/batterycheck
 Type=exec
 
 [Install]

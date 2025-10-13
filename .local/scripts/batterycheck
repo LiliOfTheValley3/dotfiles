@@ -6,7 +6,7 @@ CRITICAL=5
 CHECKED=0
 
 send_notification() {
-	notify-send -t 10000 -u critical "$1" "$2"
+	notify-send -t 60000 -u critical "$1" "$2"
 } 
 
 while [ true ]; do

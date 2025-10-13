@@ -111,7 +111,7 @@ alias la="ls --icons=always --group-directories-first --hyperlink -la"
 alias die="poweroff"
 alias off="poweroff"
 alias vim="nvim"
-
+alias pdf="pandoc -t pdf -o "
 eval "$(zoxide init --cmd cd zsh)"
 
 hyfetch
